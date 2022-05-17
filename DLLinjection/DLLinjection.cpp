@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	LPCSTR DllPath = "C:\\Users\\vuhon\\OneDrive - actvn.edu.vn\\works\\SimpleHook\\simpleHook\\x64\Debug\\simpleHook.dll"; // The Path to our DLL
-	DWORD procID = 25704; // A 32-bit unsigned integer, DWORDS are mostly used to store Hexadecimal Addresses
+	DWORD procID = 25704; 
 	HANDLE handle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, procID); // Opening the Process with All Access
 	DWORD procID1 = GetProcessId(handle);
 	cout << procID << endl;
